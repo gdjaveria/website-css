@@ -1,0 +1,142 @@
+.reservation-container{
+    max-width: 800px;
+    margin: auto;
+    border-radius: 2%;
+    margin-top: 35px;
+    padding: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #8B4513;
+    text-align: center;
+}
+.reservation-title{
+    font-size: 4rem;
+    color: #8B4513;
+    margin-bottom: 12px;
+ }
+ .reservation-description{
+    font-size: 1em;
+    color: darkgray;
+    margin-bottom: 20px;
+
+ }
+ .reservation-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+ }
+ .form-group{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+ .form-field{
+    flex:1;
+    min-width: 45%;
+    display: flex;
+    flex-direction: column;
+     gap: 5px;
+ }
+ label {
+    font-size: 0.9em;
+    color:black;
+    text-align: left;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    border: 1px solid #D2B48C;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  .submit-button {
+    background-color:  #8B4513;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    align-self: center;
+    width: 150px;
+  }
+  .submit-button:hover{
+    background-color: #D2B48C;
+
+  }
+  @media(max-width:768px){
+    .form-group{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .form-field{
+        min-width: 100%;
+    }
+  }
+
+
+.opening-hours-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    padding: 20px;
+    margin: auto;
+    gap: 20px;
+}
+
+.image-container{
+    flex: 1;
+    max-width: 50%;
+}
+.image{
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.hours-title{
+    font-size: 3em;
+    color: #8B4513;
+    margin-bottom: 15px;
+}
+.hours-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.hours-item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-left: 10px;
+}
+.hours-item .day{
+    color:#555;
+}
+.hours-item .time{
+    color: #333;
+}  
+ 
+ @media(max-width:768px){
+    .opening-hours-container{
+        flex-direction: column;
+        text-align: center;
+    }
+.image-container,
+.hours-container{
+    max-width: 100%;
+}
+.hours-item{
+    justify-content: center;
+    gap: 20px;
+}
+ }

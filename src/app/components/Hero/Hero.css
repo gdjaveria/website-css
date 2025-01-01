@@ -1,0 +1,132 @@
+.coffee-banner{
+    background-image:
+     url('https://t4.ftcdn.net/jpg/04/26/41/85/240_F_426418558_zJOd0PKxtSWOueFZnFg9oXENWf5tMKeC.jpg');
+    background-size:cover;
+    background-position:center;
+    color: white;
+    text-align: center;
+    padding: 100px;
+    border-radius: 5px;
+    box-shadow: 0 5px 22px rgba(0, 0, 0, 0.5);
+}
+.coffee-banner h1{
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+.coffee-banner p{
+    font-size:1.2rem;
+    max-width: 400px;
+    margin: 0 auto;
+    color: white;
+    text-align: left;
+}
+
+ /* CARDS CONTENT */
+.why-different-container{
+  text-align: center;
+  pad: 2rem 1rem;
+  background-color: #fff8f0;
+}
+.title{
+  font-size: 3rem;
+  color: #8b4513;
+  font-weight: bold;
+}
+.subtitle{
+  font-size: 1rem;
+  color: darkgrey;
+  margin-top: 2rem;
+}
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.feature-card{
+  background: #fff;
+  border-radius: 8px;
+  width: 200px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.feature-card:hover{
+  transform: translateY(-10px);
+}
+.icon{
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #d3a075;
+}
+h3{
+  font-size: 1.2rem;
+  color: #8b4513;
+  margin-bottom: 0.5rem;
+}
+p{
+  font-size: 0.9rem;
+  color:#8a5a4a;
+}
+
+@media(max-width:768px){
+  .features{
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature-card{
+    width: 90%;
+  }
+}
+
+      /* BEST QUALITY CONTENT */
+
+.coffee-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color:#fff8f0;
+  }
+  
+  .coffee-image img {
+    max-width: 100%;
+    margin-left: 35px;
+    margin-top: 28px;
+    border-radius: 8px;
+    object-fit:fill;
+  }
+  
+  .coffee-content {
+    max-width: 600px;
+    padding: 1rem;
+  }
+  
+  .coffee-content h1 {
+    font-size: 3rem;
+    color: #8B4513; 
+    margin-bottom: 1rem;
+  }
+  
+  .coffee-content p {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .coffee-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .coffee-content {
+      margin-top: 1rem;
+    }
+  }
+  
